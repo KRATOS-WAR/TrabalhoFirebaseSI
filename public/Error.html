@@ -1,0 +1,60 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        
+        <!--BOOTSTRAP -->        
+        <script src="assets/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+        <script src="assets/js/jquery-3.3.1.js"></script>
+        <script src="assets/js/config.js"></script>
+        
+    </head>
+    <body onload="RetornarDespesa()">
+        <div class="container-fluid">            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add.html">Add</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list.html">List</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>   
+            </div>
+            <div class="container con">
+                <div class="alert-danger card alert " style="width: 50%;margin-left:20%">
+                    <div class="card-header " id="sucesso">
+                        <h4 class="alert-heading">Error 404</h4>
+                        <form>
+                            <div class="form-group descrit_edite">
+                                <p>Essa página ainda não foi implementada</p>
+                               <br/>
+                                <br/>
+                                <p>Nossos tecnicos estão trabalhando nisso </p> 
+                                <br/>
+                                <p>Tente mais tarde...</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-body" id="card">
+                        <a href="index.html"><button type="button" class="btn btn-danger">Voltar</button></a>
+                    </div>
+                </div>    
+            </div>
+    <script src="assets/js/AppList.js"></script>
+</body>
+</html>
